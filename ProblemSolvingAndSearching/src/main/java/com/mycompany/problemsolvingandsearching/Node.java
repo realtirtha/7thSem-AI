@@ -15,4 +15,8 @@ public class Node {
         visited=visit;
     }
     
+    public String getName(){
+        return name;
+    }
+    
 }
