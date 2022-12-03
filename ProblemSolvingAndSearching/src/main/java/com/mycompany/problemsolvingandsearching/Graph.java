@@ -35,10 +35,6 @@ public class Graph {
             }
             
             System.out.println();
-            System.out.println(n.getName() + ": ");
-            for(Node n2:tmp){
-                System.out.println(n2.getName());
-            }
         }
         System.out.println();
     }
