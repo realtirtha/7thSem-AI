@@ -14,6 +14,8 @@ public class Graph {
         adjacencyMap = new HashMap<>();
         directed= dir;
     }
+    
+    //inserting edges for nodes
     public void insertEdge(Node source, Node target){
         if(!adjacencyMap.keySet().contains(source)){
             LinkedList<Node> tmp= new LinkedList<>();
@@ -26,6 +28,8 @@ public class Graph {
             adjacencyMap.put(source, tmp);
         }
     }
+    
+    //function to print edges
     public void printEdges(){
         for(Node n:adjacencyMap.keySet()){
             LinkedList<Node> tmp = adjacencyMap.get(n);
@@ -37,5 +41,10 @@ public class Graph {
             System.out.println();
         }
         System.out.println();
+    }
+    
+    //implementing DFS
+    public void DFS(int nodeID){
+        
     }
 }

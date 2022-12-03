@@ -1,5 +1,5 @@
 package com.mycompany.problemsolvingandsearching;
-
+import java.util.*; 
 /**
  * @author Tirth
  */
@@ -7,6 +7,10 @@ package com.mycompany.problemsolvingandsearching;
 public class ProblemSolvingAndSearching {
 
     public static void main(String[] args) {
+        
+        Scanner sc= new Scanner(System.in);
+        
+        //inserting nodes
         Node n1= new Node(1,"Arad",false);
         Node n2= new Node(2,"Zerind",false);
         Node n3= new Node(3, "Sibiu",false);
@@ -36,6 +40,7 @@ public class ProblemSolvingAndSearching {
         
         //inserting edges for sibui n3
         graph.insertEdge(n3,n1);
+        graph.insertEdge(n3,n2);
         graph.insertEdge(n3,n10);
         graph.insertEdge(n3,n11);
         
@@ -88,9 +93,11 @@ public class ProblemSolvingAndSearching {
         
         //inserting edges for Urziceni n15
         
-        
-
         graph.printEdges();
+        
+        System.out.println("Enter source for DFS traversal: ");
+        int nodeID = sc.nextInt();
+        graph.DFS(nodeID);
     }
     
     
