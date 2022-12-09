@@ -96,8 +96,8 @@ public class ProblemSolvingAndSearching {
         graph.printEdges();
         
         System.out.println("Enter source for DFS traversal: ");
-        int nodeID = sc.nextInt();
-        graph.DFS(nodeID);
+        
+        Dfs dfs = new Dfs();
     }
     
     
