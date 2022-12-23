@@ -98,6 +98,7 @@ public class ProblemSolvingAndSearching {
         System.out.println("Enter source for DFS traversal: ");
         
         Dfs dfs = new Dfs();
+        dfs.dfsSearch(n1, graph);
     }
     
     

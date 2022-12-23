@@ -43,6 +43,10 @@ public class Graph {
         System.out.println();
     }
     
+    public HashMap<Node,LinkedList<Node>> getAdjacency(){
+        return adjacencyMap;
+    }
+    
     //implementing DFS
     public void DFS(int nodeID){
         

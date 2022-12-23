@@ -19,4 +19,12 @@ public class Node {
         return name;
     }
     
+    public void visit(){
+        System.out.println(name);
+        visited = true;
+    }
+    
+    public boolean isVisited(){
+        return visited;
+    }
 }
