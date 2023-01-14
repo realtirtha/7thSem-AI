@@ -93,13 +93,15 @@ public class ProblemSolvingAndSearching {
         
         //inserting edges for Urziceni n15
         
-        graph.printEdges();
+        //graph.printEdges();
         
-        System.out.println("Enter source for DFS traversal: ");
+        //System.out.println("Enter source for DFS traversal: ");
+        System.out.println("Enter source for Bfs traversal: ");
         
-        Dfs dfs = new Dfs();
-        dfs.dfsSearch(n1, graph);
-    }
-    
-    
+        //Dfs dfs = new Dfs();
+        //dfs.dfsSearch(n1, graph);
+        
+        Bfs bfs = new Bfs();
+        bfs.bfsSearch(n1, graph);
+    }   
 }
