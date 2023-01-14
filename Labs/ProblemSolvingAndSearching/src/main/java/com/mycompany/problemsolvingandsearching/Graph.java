@@ -11,9 +11,10 @@ public class Graph {
     boolean directed;
     
     public Graph(boolean dir){
-        adjacencyMap = new HashMap<>();
-        directed= dir;
-    }
+    adjacencyMap = new HashMap<>();
+    directed= dir;
+}
+
     
     //inserting edges for nodes
     public void insertEdge(Node source, Node target){
@@ -47,8 +48,5 @@ public class Graph {
         return adjacencyMap;
     }
     
-    //implementing DFS
-    public void DFS(int nodeID){
-        
-    }
+    
 }

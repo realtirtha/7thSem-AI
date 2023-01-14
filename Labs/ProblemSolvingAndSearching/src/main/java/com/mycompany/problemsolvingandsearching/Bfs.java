@@ -17,11 +17,11 @@ public class Bfs
             {
                 first.visit();
                 LinkedList<Node> neigh= g.getAdjacency().get(first);
-                for(Node ne: neigh)
-                {
-                    if(ne.visited==false )
-                    {
-                        queue.add(ne);
+                if(neigh != null) {
+                    for(Node ne: neigh) {
+                        if(ne.visited==false ) {
+                            queue.add(ne);
+                        }
                     }
                 }
             }
